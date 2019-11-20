@@ -118,6 +118,12 @@ namespace RucheHome.Voiceroid
         /// </summary>
         [EnumMember]
         GynoidTalk,
+
+        /// <summary>
+        /// ギャラ子Talk
+        /// </summary>
+        [EnumMember]
+        GalacoTalk,
     }
 
     /// <summary>
@@ -283,6 +289,14 @@ namespace RucheHome.Voiceroid
                     @"GynoidTalkEditor",
                     @"GynoidTalk Editor",
                     @"ガイノイドTalk"),
+                new VoiceroidInfo(
+                    VoiceroidId.GalacoTalk,
+                    true,
+                    @"ギャラ子",
+                    new [] { @"ギャラ子", @"Talk" },
+                    @"galacoTalk",
+                    @"ギャラ子Talk"
+                    )
             }
             .ToDictionary(info => info.Id);
     }
